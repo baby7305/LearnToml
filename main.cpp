@@ -12,7 +12,7 @@ int main()
     std::vector<int> nums = toml::find<std::vector<int>>(data, "nums");
 
     // access with STL-like manner
-    if(data.at("a").contains("b"))
+    if(not data.at("a").contains("b"))
     {
         data["a"]["b"] = "c";
     }
